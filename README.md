@@ -54,7 +54,7 @@ Built with **HTML, TypeScript, FastAPI, Python**, and powered by **Ollama (DeepS
 
 ### 1. Clone the repository  
 ```bash
-git clone https://github.com/<your-username>/ai-summarizer-extension.git
+git clone https://github.com/rynchrls/ai-summarizer-extension.git
 cd ai-summarizer-extension
 ```
 
