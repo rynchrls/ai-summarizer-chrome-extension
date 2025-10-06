@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AI Summarizer</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        padding: 20px;
+        width: 400px; /* larger width */
+        background: #f3f4f6;
+        color: #1f2937;
+      }
+
+      h2 {
+        margin: 0 0 16px;
+        text-align: center;
+        color: #111827;
+        font-size: 22px; /* bigger title */
+      }
+
+      button {
+        width: 100%;
+        padding: 14px;
+        margin-bottom: 12px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px; /* larger text */
+        font-weight: 600;
+        background: #2563eb;
+        color: white;
+        transition: background 0.2s ease, transform 0.1s ease;
+      }
+
+      button:hover {
+        background: #1e40af;
+        transform: translateY(-1px);
+      }
+
+      #output {
+        margin-top: 16px;
+        max-height: 300px; /* taller output */
+        overflow-y: auto; /* allow scrolling */
+        padding: 14px;
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        background: white;
+        font-size: 15px; /* bigger text for readability */
+        line-height: 1.6;
+        white-space: pre-wrap;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+        /* Hide scrollbar but keep scrolling */
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE/Edge */
+      }
+
+      #output::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+      }
+
+      /* Custom Scrollbar */
+      #output::-webkit-scrollbar {
+        width: 10px;
+      }
+      #output::-webkit-scrollbar-track {
+        background: #f3f4f6;
+        border-radius: 5px;
+      }
+      #output::-webkit-scrollbar-thumb {
+        background: #9ca3af;
+        border-radius: 5px;
+      }
+      #output::-webkit-scrollbar-thumb:hover {
+        background: #6b7280;
+      }
+
+      #fileInput {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>AI Summarizer</h2>
+
+    <!-- Summarize webpage button -->
+    <button id="summarizeBtn">📄 Summarize Page</button>
+
+    <!-- Summarize PDF button -->
+    <button id="summarizePdfBtn">📕 Summarize PDF</button>
+    <input type="file" id="fileInput" accept="application/pdf" />
+
+    <div id="output">Your summary will appear here...</div>
+
+    <script src="dist/popup.js"></script>
+  </body>
+</html>

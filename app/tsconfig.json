@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES2021",
+    "module": "ESNext",             // ensures native ES modules
+    "moduleResolution": "Bundler",  // avoids NodeNext restriction
+    "outDir": "dist",
+    "strict": true,
+    "skipLibCheck": true,
+    "esModuleInterop": false,
+    "noEmitOnError": true
+  },
+  "include": ["src"]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "ai-meeting-notes",
+  "version": "1.0.0",
+  "description": "Chrome extension for AI-powered meeting notes",
+  "scripts": {
+    "build": "esbuild src/popup.ts --bundle --outfile=dist/popup.js --format=esm && esbuild src/pdfHandler.ts --bundle --outfile=dist/pdfHandler.js --format=esm",
+    "watch": "tsc -w",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.1.14",
+    "@types/pdfjs-dist": "^2.10.377",
+    "esbuild": "^0.25.10",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "chrome": "^0.1.0",
+    "marked": "^15.0.12",
+    "pdfjs-dist": "^4.8.69"
+  }
+}
