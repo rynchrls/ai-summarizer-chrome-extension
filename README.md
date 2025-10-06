@@ -6,7 +6,7 @@ Built with **HTML, TypeScript, FastAPI, Python**, and powered by **Ollama (DeepS
 ---
 
 ## 🚀 Features  
-- 🔍 **Text Summarization** – Select and highlight text on any webpage, then right-click or use the extension popup to get a concise summary.  
+- 🔍 **Text Summarization** – Select and highlight text on any webpage, use the extension popup to get a concise summary.  
 - 📑 **PDF Summarization** – Upload PDF files (up to **5 pages max**) and get AI-generated summaries.  
 - ⚡ **FastAPI Backend** – Secure and scalable backend for handling summarization requests.  
 - 🤖 **AI Powered** – Uses **Ollama DeepSeek V3.1 (671B Cloud)** for high-quality summaries.  
